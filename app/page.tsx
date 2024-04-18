@@ -33,7 +33,7 @@ export default function Home() {
       </div>
       <div className="flex w-full h-[5%] max-w-sm items-center space-x-2 pb-10 pt-5">
         <Label htmlFor="email">fedora</Label><ChevronRight className="w-4 h-4"/>
-        <Input placeholder="Send" value={command} onChange={handleChange} disabled={disableInput} />
+        <Input placeholder="Type and Send some message" value={command} onChange={handleChange} disabled={disableInput} />
         <Button type="submit" onClick={send}><Send className="w-4 h-4"/></Button>
       </div>
     </main>
