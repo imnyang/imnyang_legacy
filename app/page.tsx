@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
     <main className={`dark flex flex-col items-center justify-center w-[100vw] h-[100vh]`}>
-      <div className="flex h-[80%] flex-col items-center justify-center z-100">
+      <div className="flex h-[75%] flex-col items-center justify-center z-100">
         <h1 className="font-extrabold text-3xl">imnyang</h1>
         <br/>
         <p>Made with 💕 / Full-Stack Dev</p>
