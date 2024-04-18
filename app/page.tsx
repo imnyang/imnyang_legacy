@@ -31,7 +31,8 @@ export default function Home() {
         <br/>
         <p>Made with 💕 / Full-Stack Dev</p>
       </div>
-      <div className="flex w-full h-[5%] max-w-sm items-center space-x-2 pb-10 pt-5">
+      <p className="text-gray-500 font-light text-sm">메시지를 보낼시 악용 방지를 위해 클라이언트의 정보의 일부가 제공됩니다.</p>
+      <div className="flex w-full h-[10%] max-w-sm items-center space-x-2 pb-10 pt-5">
         <Label htmlFor="email">fedora</Label><ChevronRight className="w-4 h-4"/>
         <Input placeholder="Type and Send some message" value={command} onChange={handleChange} disabled={disableInput} />
         <Button type="submit" onClick={send}><Send className="w-4 h-4"/></Button>
