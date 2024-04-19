@@ -97,12 +97,14 @@
   background: var(--secondary);
 }
 
-/* from zmedia */
-@media screen and (min-width: 1px) {
+/* Custom avatar */
 
-  /* reset */
-  ::-webkit-scrollbar {
-      width: 8px;
-      height: 10px;
-  }
+.hover\:animate-spin:hover {
+  animation: spin 1s linear infinite;
+}
+
+.avatar {
+  background-color: hsl(var(--primary-foreground));
+  border-radius: 100%;
+  box-shadow: 0px 0px 27px 10px hsl(var(--accent));
 }

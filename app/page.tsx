@@ -1,9 +1,11 @@
 "use client"
 // Components
 import React, { useState } from "react";
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
+import Image from "next/image";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import avatar from "@/assets/profile.png";
 
 // Icon
 import {
@@ -24,9 +26,10 @@ export default function Home() {
     setDisbleInput(true);
   }
   return (
-    <div id="Root" className="flex flex-col items-center justify-center w-full h-[90vh]">
-    <main className={`dark flex flex-col items-center justify-center w-full h-full`}>
+    <div id="Root" className="flex flex-col items-center justify-center w-full h-[100vh]">
+    <main className={`dark flex flex-col items-center justify-center w-full h-[90vh]`}>
       <div className="flex h-[92%] flex-col items-center justify-center z-100">
+        <Image className="hover:animate-spin avatar mb-5" alt="Profile" src={avatar} width={128} height={128} />
         <h1 className="font-extrabold text-3xl">imnyang</h1>
         <br/>
         <p>Made with 💕 / Full-Stack Dev</p>
