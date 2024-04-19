@@ -24,20 +24,20 @@ export default function Home() {
     setDisbleInput(true);
   }
   return (
-    <>
-    <main className={`dark flex flex-col items-center justify-center w-[100vw] h-[100vh]`}>
-      <div className="flex h-[90%] flex-col items-center justify-center z-100">
+    <div id="Root" className="flex flex-col items-center justify-center w-full h-[90vh]">
+    <main className={`dark flex flex-col items-center justify-center w-full h-full`}>
+      <div className="flex h-[92%] flex-col items-center justify-center z-100">
         <h1 className="font-extrabold text-3xl">imnyang</h1>
         <br/>
         <p>Made with 💕 / Full-Stack Dev</p>
       </div>
-      <p className="text-gray-500 font-light text-sm">메시지를 보낼시 악용 방지를 위해 클라이언트의 정보의 일부가 제공됩니다.</p>
-      <div className="flex w-full h-[10%] max-w-sm items-center space-x-2 pb-10 pt-5">
+      <p className="text-gray-500 font-light text-sm">보안을 위해 전송시 일부 정보가 제공됩니다.</p>
+      <div className="flex w-full h-[8%] max-w-sm items-center space-x-2 pt-2">
         <Label htmlFor="email">fedora</Label><ChevronRight className="w-4 h-4"/>
         <Input placeholder="Type and Send some message" value={command} onChange={handleChange} disabled={disableInput} />
         <Button type="submit" onClick={send}><Send className="w-4 h-4"/></Button>
       </div>
     </main>
-    </>
+    </div>
   );
 }
