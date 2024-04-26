@@ -72,7 +72,7 @@ export default function Home() {
             </div>
             <p className="text-gray-500 font-light text-sm">보안을 위해 전송시 일부 정보가 제공됩니다.</p>
             <div className="flex w-full h-[8%] max-w-sm items-center space-x-2 pt-2">
-              <Label htmlFor="email">fedora</Label><ChevronRight className="w-4 h-4"/>
+              <Label htmlFor="email">ubuntu</Label><ChevronRight className="w-4 h-4"/>
               <Input placeholder="Type and Send some message" value={command} onChange={handleChange}
                      disabled={disableInput}/>
               <Button type="submit" onClick={send}><Send className="w-4 h-4"/></Button>
