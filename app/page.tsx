@@ -23,6 +23,7 @@ import {
   Send
 } from "lucide-react"
 import {
+  AppWindow,
   NotepadText,
   CalendarClock,
   CalendarRange,
@@ -68,7 +69,7 @@ export default function Home() {
               <Image className="hover:animate-spin avatar mb-5" alt="Profile" src={avatar} width={128} height={128}/>
               <h1 className="font-extrabold text-3xl">imnyang</h1>
               <br/>
-              <p className={"flex flex-row"}>Made with 💕 /<button className="pl-2 text-muted-foreground" onClick={() => setOpen(true)}>Press{" "}<kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"><span className="text-xs">⌘</span>J</kbd></button></p>
+              <p className={"flex flex-row"}>Hello World with 💕 /<button className="pl-2 text-muted-foreground" onClick={() => setOpen(true)}>Press{" "}<kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"><span className="text-xs">⌘</span>J</kbd></button></p>
             </div>
             <p className="text-gray-500 font-light text-sm">보안을 위해 전송시 일부 정보가 제공됩니다.</p>
             <div className="flex w-full h-[8%] max-w-sm items-center space-x-2 pt-2">
@@ -84,6 +85,15 @@ export default function Home() {
           <CommandList>
             <CommandEmpty>No results found.</CommandEmpty>
             <CommandGroup heading="in this site">
+              <Link href="/">
+                <CommandItem onSelect={() => {
+                  router.push("/")
+                  setOpen(false)
+                }}>
+                  <AppWindow className="mr-2 h-4 w-4" />
+                  <span>Root</span>
+                </CommandItem>
+              </Link>
               <Link href="https://github.com/imnyang/imnyang/tree/master">
                 <CommandItem onSelect={() => {
                   router.push("https://github.com/imnyang/imnyang/tree/master")
