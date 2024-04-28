@@ -21,7 +21,7 @@ import {
 } from "lucide-react"
 import {useRouter} from "next/navigation";
 
-export default function timeline() {
+export default function Timeline() {
     const router = useRouter()
 
     const [open, setOpen] = React.useState(false)
