@@ -108,3 +108,94 @@
   border-radius: 100%;
   box-shadow: 0px 0px 27px 10px hsl(var(--accent));
 }
+
+@font-face {
+  font-family: 'JalnanOTF00';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+}
+
+.name {
+  font-family: 'JalnanOTF00', sans-serif;
+}
+
+/* Testing */
+
+.ahit {
+  font-size: 9vmin;
+  color: #8bf;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 2rem;
+}
+
+@keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "i"; }
+  2.2791%, 25.0698% { content: "im"; }
+  3.4186%, 23.9302% { content: "imn"; }
+  4.5581%, 22.7907% { content: "imny"; }
+  5.6977%, 21.6512% { content: "imnya"; }
+  6.8372%, 20.5116% { content: "imnyan"; }
+  7.9767%, 19.3721% { content: "imnyang"; }
+
+  45.6279%, 69.8605% { content: ""; }
+  46.7674%, 68.7209% { content: "ㅇ"; }
+  47.7674%, 67.7209% { content: "아"; }
+  48.7674%, 66.7209% { content: "아ㅇ"; }
+  49.7674%, 65.7209% { content: "아이"; }
+  50.9070%, 64.5814% { content: "아임"; }
+  52.0465%, 63.4419% { content: "아임ㄴ"; }
+  53.1860%, 62.3023% { content: "아임냐"; }
+  54.3256%, 61.1628% { content: "아임냥"; }
+
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "아임냥"; }
+    25% { content: "imnyang"; }
+    50% { content: "reader"; }
+    75% { content: "human"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+/**/
