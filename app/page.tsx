@@ -68,7 +68,7 @@ export default function Home() {
             <div className="flex h-[92%] flex-col items-center justify-center z-100">
               <Image className="hover:animate-spin avatar mb-5" alt="Profile" src={avatar} width={128} height={128}/>
               
-              <button className="flex flex-row items-end pt-3 pb-0"><h1 aria-label="imnyang" className="name font-extrabold text-3xl">&nbsp;<span className="typewriter"></span></h1></button>
+              <button className="flex flex-row items-end pt-3 pb-0"><h1 aria-label="imnyang" className="name font-extrabold text-3xl">아임냥</h1></button>
               <p className={"flex flex-row pt-3"}>Hello World with 💕 /<button className="pl-2 text-muted-foreground" onClick={() => setOpen(true)}>Press{" "}<kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"><span className="text-xs">⌘</span>J</kbd></button></p>
             </div>
             <p className="text-gray-500 font-light text-sm">보안을 위해 전송시 일부 정보가 제공됩니다.</p>
