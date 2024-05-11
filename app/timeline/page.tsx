@@ -44,6 +44,9 @@ export default function Timeline() {
                 <div className="items-start">
                 <button onClick={() => setOpen(true)}><h1 className={"text-3xl font-black"}>Timeline</h1></button>
                     <br/>
+
+                    <p className="pl-2 text-muted-foreground">2024-05-11 <Link className="text-blue-400"
+                                                                               href="https://timeline.imnyang.xyz">LG AI 청소년 캠프 1기 수료</Link></p>
                     <p className="pl-2 text-muted-foreground">2024-04-06 <Link className="text-blue-400"
                                                                                href="https://timeline.imnyang.xyz">TimeTable
                         (Sekai 개조판 배포) [API 유실]</Link></p>
