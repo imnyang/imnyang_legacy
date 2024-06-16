@@ -44,6 +44,8 @@ export default function Timeline() {
                 <div className="items-start">
                 <button onClick={() => setOpen(true)}><h1 className={"text-3xl font-black"}>Timeline</h1></button>
                     <br/>
+                    <p className="pl-2 text-muted-foreground">2024-05-16 <Link className="text-blue-400"
+                                                                               href="http://ncf.or.kr">글로벌 스타트업 학교 2기 합격</Link></p>
                     <p className="pl-2 text-muted-foreground">2024-05-11 <Link className="text-blue-400"
                                                                                href="https://lgaiyouthcamp.or.kr/">LG AI 청소년 캠프 1기 LG 탐색상 수상</Link></p>
                     <p className="pl-2 text-muted-foreground">2024-05-11 <Link className="text-blue-400"
@@ -57,8 +59,8 @@ export default function Timeline() {
                                                                                href="https://dreamhack.io/users/40116/wargame">Dreamhack
                         #133</Link></p>
                     <p className="pl-2 text-muted-foreground">2024-03-24 <Link className="text-blue-400"
-                                                                               href="https://launchpad.net/ubuntu/+mirror/ubuntu.imnyang.xyz-release">Ubuntu
-                        Mirror [Broken]</Link></p>
+                                                                               href="https://launchpad.net/ubuntu/+mirror/mirror.imnyang.xyz-release">Ubuntu
+                        Mirror</Link></p>
                     <p className="pl-2 text-muted-foreground">2024-03-24 <Link className="text-blue-400"
                                                                                href="https://colab.research.google.com/drive/1a4G4hD9huBeGRZhEL2HNDMpqSuf4y61k?usp=sharing">내
                         목소리로 AI Cover 만들기</Link></p>
