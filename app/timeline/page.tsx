@@ -129,7 +129,7 @@ export default function Timeline() {
 
                 </div>
             </main>
-            <CommandDialog open={open} onOpenChange={setOpen}>
+          <CommandDialog open={open} onOpenChange={setOpen}>
           <CommandInput placeholder="Type a command or search..." />
           <CommandList>
             <CommandEmpty>No results found.</CommandEmpty>
@@ -159,6 +159,15 @@ export default function Timeline() {
                 }}>
                   <CalendarRange className="mr-2 h-4 w-4" />
                   <span>Timeline</span>
+                </CommandItem>
+              </Link>
+              <Link href="/giscus">
+                <CommandItem onSelect={() => {
+                  router.push("/giscus")
+                  setOpen(false)
+                }}>
+                  <CalendarRange className="mr-2 h-4 w-4" />
+                  <span>Giscus</span>
                 </CommandItem>
               </Link>
             </CommandGroup>
