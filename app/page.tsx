@@ -58,7 +58,7 @@ export default function Home() {
 
   const send = async () => {
     const response = await fetch(`https://api.imnyang.xyz/website/send?message=${command}`, { method: "POST" });
-
+    setCommand("");
     setDisbleInput(true);
   }
   return (
