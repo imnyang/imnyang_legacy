@@ -44,6 +44,8 @@ export default function Timeline() {
                 <div className="items-start">
                 <button onClick={() => setOpen(true)}><h1 className={"text-3xl font-black"}>Timeline</h1></button>
                     <br/>
+                    <p className="pl-2 text-muted-foreground">2024-08-01 <Link className="text-blue-400"
+                                                                               href="http://ncf.or.kr">글로벌 스타트업 학교 베트남 해외 연수 데모데이 대상 (1위)</Link></p>
                     <p className="pl-2 text-muted-foreground">2024-05-16 <Link className="text-blue-400"
                                                                                href="http://ncf.or.kr">글로벌 스타트업 학교 2기 합격</Link></p>
                     <p className="pl-2 text-muted-foreground">2024-05-11 <Link className="text-blue-400"
